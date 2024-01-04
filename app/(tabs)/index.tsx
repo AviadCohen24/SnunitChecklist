@@ -1,24 +1,67 @@
-import { ImageBackground, StyleSheet } from 'react-native';
+import { Dimensions, ImageBackground, ScrollView, StyleSheet } from 'react-native';
 import { Text, View } from '../../components/Themed';
 import { PngTopView } from '../../assets/ImagesObjects';
 import TopicLinkButton from '../../components/TopicLinkButton';
+import Content from '../../constants/Content.json'
+
+const screenHeight = Dimensions.get('window').height;
 
 export default function LearningTab() {
+  let contentArray = Content.reduce((acc, current, index) => {
+    if (index < 4) {
+      acc.firstFour.push(current);
+    }
+    else {
+      acc.nextFour.push(current);
+    }
+    return acc;
+  }, { firstFour: [], nextFour: [] });
+
   return (
-    <View style={styles.container}>
-      <ImageBackground source={PngTopView} resizeMode='cover' style={styles.image}>
-        <TopicLinkButton topicName={'test'} />
-      </ImageBackground>
-    </View>
+    <ImageBackground source={PngTopView} resizeMode='cover' style={styles.background}>
+      <ScrollView>
+        <View style={styles.container}>
+          <View style={styles.leftColumn}>
+            {contentArray.firstFour.map(topic => (
+              <TopicLinkButton key={topic.title} topicName={topic.title} />
+            ))}
+          </View>
+          <View style={styles.rightColumn}>
+            {contentArray.nextFour.map(topic => (
+              <TopicLinkButton key={topic.title} topicName={topic.title} />
+            ))}
+          </View>
+        </View>
+      </ScrollView>
+    </ImageBackground>
   );
 }
+
+const baseStyles = StyleSheet.create({
+  buttonsColumn: {
+    backgroundColor: 'transparent',
+    rowGap: 15,
+    margin: 10
+  }
+});
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'transparent',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
-  image: {
+  background: {
     flex: 1,
     justifyContent: 'center',
+  },
+  leftColumn: {
+    ...baseStyles.buttonsColumn,
+    alignItems: 'flex-start',
+  },
+  rightColumn: {
+    ...baseStyles.buttonsColumn,
+    alignItems: 'flex-end',
   },
 });
