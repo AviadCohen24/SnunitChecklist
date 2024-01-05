@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet, Pressable, Dimensions } from "react-native";
+import { Link } from "expo-router";
+import { Text, StyleSheet, Pressable, Dimensions } from "react-native";
 
 const screenHeight = Dimensions.get('window').height;
 const buttonMargin = 25;
@@ -10,17 +11,15 @@ export type TopicLinkProps = {
 
 export default function TopicLinkButton({ topicName }: TopicLinkProps) {
     return (
-        <View style={styles.container}>
+        <Link href={{ pathname: '/topicOverlay', params: { topicName }}} asChild>
             <Pressable style={styles.button}>
                 <Text style={styles.text}>{topicName}</Text>
             </Pressable>
-        </View>
+        </Link>
     )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    },
   button: {
     alignItems: 'center',
     justifyContent: 'center',
