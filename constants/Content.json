@@ -1,34 +1,479 @@
 [
     {
         "title": "בדיקות לפני התנעה",
-        "subject": []
+        "backgroundUrl": "../assets/images/pngTopView.png",
+        "subtopics": [
+            {
+                "name": "בדיקות בטיחות",
+                "operations": [
+                    {
+                        "operationName": "מבט כללי",
+                        "steps": [
+                            {
+                                "stepName": "סביבת המטוס נקייה",
+                                "details": ""
+                            },
+                            {
+                                "stepName": "מטוס",
+                                "details": "איזון, שלמות, ניקיון"
+                            },
+                            {
+                                "stepName": "חבלי עגינה",
+                                "details": "מוסרים"
+                            },
+                            {
+                                "stepName": "נועלי הגאים",
+                                "details": "מוסרים"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "תא הטייס",
+                        "steps": [
+                            {
+                                "stepName": "חופה",
+                                "details": "בדוק שלמות, שלשו אבטחות נחושת במקומן"
+                            },
+                            {
+                                "stepName": "ידית הגלגלים",
+                                "details": "מטה"
+                            },
+                            {
+                                "stepName": "מפתח התנעה",
+                                "details": "בחוץ"
+                            },
+                            {
+                                "stepName": "בלמי חניה",
+                                "details": "הפעל"
+                            },
+                            {
+                                "stepName": "מתג מצבר",
+                                "details": "מופסק"
+                            },
+                            {
+                                "stepName": "ידית גלגלים בחירום",
+                                "details": "NORMAL"
+                            },
+                            {
+                                "stepName": "מטפה ופטיש חירום",
+                                "details": "מאובטחים, לחץ מטפה תקין"
+                            },
+                            {
+                                "stepName": "רינה, ערכת עזרה ראשונה, בד\"ח וספר טייס (AFM)",
+                                "details": "ודא נמצאים ומאובטחים"
+                            },
+                            {
+                                "stepName": "ניקיון",
+                                "details": "אין חפצים משוחררים"
+                            },
+                            {
+                                "stepName": "VTR",
+                                "details": "הכנס USB"
+                            },
+                            {
+                                "stepName": "כיסא ריק בטיסת יחיד",
+                                "details": "מצנח מוסר ורצועות קשורות"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name":"בדיקות חיצוניות",
+                "operations": [
+                    {
+                        "operationName": "גוף ימין",
+                        "steps": [
+                            {
+                                "stepName": "גוף וחופה",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "אנטנות",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "שמן הידראולי",
+                                "details": "כמות במגבלות"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "זנב",
+                        "steps": [
+                            {
+                                "stepName": "סנפיר ומייצבים",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "הגה גובה",
+                                "details": "שלמות ותנועה חופשית ומלאה"
+                            },
+                            {
+                                "stepName": "לוחון קיזוז",
+                                "details": "שלמות, חיבורים ופין אבטחה"
+                            },
+                            {
+                                "stepName": "ARI",
+                                "details": "בדוק"
+                            },
+                            {
+                                "stepName": "אנטנות",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "פורקי חשמל",
+                                "details": "שלמים"
+                            },
+                            {
+                                "stepName": "טבעת עגינה",
+                                "details": "שךמה ולא משופשפת"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "גוף שמאל",
+                        "steps": [
+                            {
+                                "stepName": "גוף וחופה",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "אנטנות",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "פתח מתח חיצוני",
+                                "details": "סגור"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "כנף שמאל",
+                        "steps": [
+                            {
+                                "stepName": "כנף",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "מדפים",
+                                "details": "שלמות, צירים"
+                            },
+                            {
+                                "stepName": "מאזנת",
+                                "details": "שלמות, תנועה חופשית ומלאה"
+                            },
+                            {
+                                "stepName": "לוחון קיזוז",
+                                "details": "שלמות, חיבורים ופין אבטחה"
+                            },
+                            {
+                                "stepName": "פורק חשמל",
+                                "details": "שלם"
+                            },
+                            {
+                                "stepName": "טבעת עגינה",
+                                "details": "מהודקת"
+                            },
+                            {
+                                "stepName": "מנורות",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "צינור פיטו",
+                                "details": "כיסוי מוסר, פתחים נקיים, טבעת הדוקה"
+                            },
+                            {
+                                "stepName": "מדיד טמפרטורה",
+                                "details": "שלם"
+                            },
+                            {
+                                "stepName": "מכסה דלק",
+                                "details": "סגור ומאובטח, אדום מול אדום"
+                            },
+                            {
+                                "stepName": "מחוון דלק מכני",
+                                "details": "בדוק כמות"
+                            },
+                            {
+                                "stepName": "כן נסע ובלמים",
+                                "details": "בדוק שלמות, היעדר נזילות, מצב צמיג, אדום מול אדום"
+                            },
+                            {
+                                "stepName": "סד עצירה",
+                                "details": "הסר"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "אף המטוס",
+                        "steps": [
+                            {
+                                "stepName": "מכסה מנוע",
+                                "details": "מהודק, שלם, ברגים במקומם"
+                            },
+                            {
+                                "stepName": "שמן מנוע",
+                                "details": "בדוק כמות (8-12 קווארט)"
+                            },
+                            {
+                                "stepName": "כיסוי מנוע ואוורור",
+                                "details": "מוסרים"
+                            },
+                            {
+                                "stepName": "מדחף וחיפוי מדחף",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "פתחי אוויר",
+                                "details": "נקיים"
+                            },
+                            {
+                                "stepName": "פנסים",
+                                "details": "שלמים"
+                            },
+                            {
+                                "stepName": "CSU",
+                                "details": "נזילות, חיבור"
+                            },
+                            {
+                                "stepName": "כן נסע קדמי",
+                                "details": "בדוק שלמות, היעדר נזילות, מצב צמיג, אדום מול אדום"
+                            }
+                        ]
+                    },
+                    {
+                        "operationName": "כנף ימין",
+                        "steps": [
+                            {
+                                "stepName": "כנף",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "כן נסע ובלמים",
+                                "details": "בדוק שלמות, היעדר נזילות, משכך, מצב צמיג, אדום מול אדום"
+                            },
+                            {
+                                "stepName": "סד עצירה",
+                                "details": "הסר"
+                            },
+                            {
+                                "stepName": "מחוון דלק מכאני",
+                                "details": "בדוק כמות דלק"
+                            },
+                            {
+                                "stepName": "מכסה דלק",
+                                "details": "סגור ומאובטח, אדום מול אדום"
+                            },
+                            {
+                                "stepName": "לוחית התראת הזדקרות",
+                                "details": "נעה בחופשיות"
+                            },
+                            {
+                                "stepName": "טבעת הגינה",
+                                "details": "מהודקת"
+                            },
+                            {
+                                "stepName": "מנורות",
+                                "details": "שלמות"
+                            },
+                            {
+                                "stepName": "פורק חשמל",
+                                "details": "שלם"
+                            },
+                            {
+                                "stepName": "מאזנת",
+                                "details": "שלמות, תנועה חופשית ומלאה"
+                            },
+                            {
+                                "stepName": "לוחון קיזוז",
+                                "details": "שלמות, חיבורים ופין אבטחה"
+                            },
+                            {
+                                "stepName": "מדפים",
+                                "details": "שלמות, צירים"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "בדיקות לפני התנעה",
+                "operations": [
+                    {
+                        "steps": [
+                            {
+                                "stepName": "ספר מטוס",
+                                "details": "בוק וחתום"
+                            },
+                            {
+                                "stepName": "תא מטען",
+                                "details": "חפצים מאובטחים"
+                            },
+                            {
+                                "stepName": "מצנח וכיסא",
+                                "details": "הקשר, בדוק נעילת רצועות"
+                            },
+                            {
+                                "stepName": "כיסא ודוושות",
+                                "details": "התאם"
+                            },
+                            {
+                                "stepName": "הגאים",
+                                "details": "חופש מלא ובכיוון הנכון"
+                            },
+                            {
+                                "stepName": "לחיצים",
+                                "details": "בפנים"
+                            },
+                            {
+                                "stepName": "מכשירי טיסה",
+                                "details": "בדוק, כייל מדי גובה ראשונית לגובה השדה, מד G - אפס"
+                            },
+                            {
+                                "stepName": "מכשירי מנוע",
+                                "details": "בדוק שלמות"
+                            },
+                            {
+                                "stepName": "מפסקים",
+                                "details": "כולם למטה"
+                            },
+                            {
+                                "stepName": "ALT AIR",
+                                "details": "סגורה ומאובטחת"
+                            },
+                            {
+                                "stepName": "ידיות מנוע",
+                                "details": "חופשיות, קבע חיכוך:",
+                                "subSteps": [
+                                    {
+                                        "subStepName": "תערובת",
+                                        "details": "עניה"
+                                    },
+                                    {
+                                        "subStepName": "מדחף",
+                                        "details": "מלא קדימה"
+                                    },
+                                    {
+                                        "subStepName": "מצערת",
+                                        "details": "רבע מהלך קדימה"
+                                    }
+                                ]
+                            },
+                            {
+                                "stepName": "מקזז מכאני",
+                                "details": "תנועה מלאה והחזר למצב T/0"
+                            },
+                            {
+                                "stepName": "מפתח",
+                                "details": "הכנס"
+                            },
+                            {
+                                "stepName": "מצבר",
+                                "details": "הפעל"
+                            },
+                            {
+                                "stepName": "BUS TIE",
+                                "details": "MAN"
+                            },
+                            {
+                                "stepName": "אורות נגד התנגשות",
+                                "details": "הפעל"
+                            },
+                            {
+                                "stepName": "אוזניות",
+                                "details": "הרכב"
+                            },
+                            {
+                                "stepName": "טבלת התראות",
+                                "details": "לחץ על טסט, בדוק נוריות ואזהרות קוליות בשני מחזורים, נורית OIL PRESS דולקת"
+                            },
+                            {
+                                "stepName": "דלק",
+                                "details": "בדוק כמות"
+                            },
+                            {
+                                "stepName": "בוחר דלק",
+                                "details": "העבר למיכל הפחות מלא (אם שווה אז לשמאלי)"
+                            },
+                            {
+                                "stepName": "חופה",
+                                "details": "סגור"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
         "title": "התנעה",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+        ]
     },
     {
         "title": "הסעה",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     },
     {
         "title": "לאחר התנעה",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     },
     {
         "title": "המראה",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     },
     {
         "title": "באוויר",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     },
     {
         "title": "בנחיתה",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     },
     {
         "title": "הליכה סביב ו-T&G",
-        "subject": []
+        "subtopics": [
+            {
+                "name": "",
+                "operation": [
+                ]
+            }
+      ]
     }
 ]
