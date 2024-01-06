@@ -6,6 +6,7 @@ import * as Content from '../constants/Content.json'
 import { ChecklistItem } from '../constants/Types';
 import { TopicBackgrounds } from '../assets/ImagesObjects';
 import { RFPercentage } from 'react-native-responsive-fontsize';
+import SubTopic from '../components/SubTopic';
 
 // If the `ImportRequiredTopic` function is called frrom multiple places, use useMemo hook
 const ImportRequiredTopic = (topicName: string): ChecklistItem => {
@@ -45,6 +46,9 @@ export default function topicOverlay() {
     return (
         <ImageBackground source={ImportBackground(content.background)} style={styles.background}>
             <Text style={styles.topicTitle}>{topicName}</Text>
+            {content.subtopics.map(val => (
+              <SubTopic key={val.name} subTopic={val}/>      
+            ))}
         </ImageBackground>
     )
 }
@@ -54,7 +58,7 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     topicTitle: {
-      fontSize: RFPercentage(3),
+      fontSize: RFPercentage(3.3),
       fontWeight: '900',
       letterSpacing: 0.25,
       color: 'black',

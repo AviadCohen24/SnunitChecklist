@@ -1,4 +1,4 @@
-// --------------Topic full export export type--------------
+// --------------Checklist types--------------
 export type StepDetail = {
   stepName: string;
   details: string;

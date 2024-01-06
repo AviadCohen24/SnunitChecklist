@@ -2,7 +2,7 @@ import { Dimensions, ScrollView, StyleSheet } from 'react-native';
 import { ImageBackground } from 'expo-image/build/ImageBackground';
 import { View } from '../../components/Themed';
 import { PngTopView } from '../../assets/ImagesObjects';
-import TopicLinkButton from '../../components/TopicLinkButton.component.';
+import TopicLinkButton from '../../components/TopicLinkButton';
 import Content from '../../constants/Content.json'
 
 const screenHeight = Dimensions.get('window').height;
