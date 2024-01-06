@@ -1,19 +1,28 @@
 import { StyleSheet, Text } from "react-native";
-import { Operation } from "../constants/Types";
+import { StepDetail } from "../constants/Types";
 import { RFPercentage } from "react-native-responsive-fontsize";
 import { View } from "./Themed";
+import Substep from "./Substep";
 
-// TODO: Its just copy pase, need to implement
-type OperationProps = {
-    operation: Operation,
+type OperationStepProps = {
+    step: StepDetail,
+    index: number
 }
 
-export default function OperationStack(props: OperationProps) {
-    const { operation } = props;
+export default function OperationStep(props: OperationStepProps) {
+    const { step, index } = props;
 
     return(
         <View style={styles.container}>
-            { operation.operationName && <Text style={styles.operationName}>{operation.operationName}</Text> }
+            <View style={styles.stepInfoContainer}>
+                <Text style={styles.stepName}>.{index + 1} </Text>
+                <Text style={styles.stepName}> {step.stepName} </Text>
+                {step.details && <Text style={styles.stepDescription}>  -  {step.details}</Text>}
+            </View>
+            {step.subSteps && step.subSteps.map((val, subIndex) => (
+                <Substep key={subIndex} subStepName={val.subStepName} 
+                         details={val.details} index={subIndex} parentIndex={index}/>
+            ))}
         </View>
     )
 }
@@ -23,10 +32,22 @@ const styles = StyleSheet.create({
         backgroundColor: "transpert",
         justifyContent: "center"
     },
-    operationName: {
-        fontSize: RFPercentage(2),
+    stepInfoContainer: {
+        flexDirection: "row",
+        backgroundColor: "transpert",
+        verticalAlign: "middle",
+        direction: "rtl",
+        paddingLeft: 35,
+        marginTop: 7,
+    },
+    stepName: {
+        fontSize: RFPercentage(1.7),
         fontWeight: "600",
         textAlign: "right",
-        paddingRight: 15
+    },
+    stepDescription: {
+        fontSize: RFPercentage(1.7),
+        textAlign: "right",
+        flexWrap: "wrap",
     }
 })

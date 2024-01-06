@@ -19,7 +19,7 @@ export default function LearningTab() {
   }, { firstFour: [], nextFour: [] });
 
   return (
-    <ImageBackground source={PngTopView} resizeMode='cover' style={styles.background}>
+    <ImageBackground source={PngTopView} contentFit="cover" style={styles.background}>
       <ScrollView>
         <View style={styles.container}>
           <View style={styles.leftColumn}>

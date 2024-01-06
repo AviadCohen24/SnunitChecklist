@@ -1,8 +1,8 @@
 // --------------Checklist types--------------
 export type StepDetail = {
   stepName: string;
-  details: string;
-  subSteps?: (StepDetail | { subStepName: string; details: string; })[];
+  details?: string;
+  subSteps?: { subStepName: string; details: string; }[];
 };
 
 export type Operation = {

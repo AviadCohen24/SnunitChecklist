@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, ScrollView } from 'react-native';
 import { useCallback, useState } from 'react';
 import { useNavigation, useRouter, useLocalSearchParams, useFocusEffect } from 'expo-router';
 import { ImageBackground } from 'expo-image/build/ImageBackground';
@@ -44,11 +44,13 @@ export default function topicOverlay() {
     }
 
     return (
-        <ImageBackground source={ImportBackground(content.background)} style={styles.background}>
-            <Text style={styles.topicTitle}>{topicName}</Text>
-            {content.subtopics.map(val => (
-              <SubTopic key={val.name} subTopic={val}/>      
-            ))}
+        <ImageBackground source={ImportBackground(content.background)} contentFit="cover" style={styles.background}>
+            <ScrollView>
+                <Text style={styles.topicTitle}>{topicName}</Text>
+                {content.subtopics.map(val => (
+                  <SubTopic key={val.name} subTopic={val}/>      
+                ))}
+            </ScrollView>
         </ImageBackground>
     )
 }
@@ -58,7 +60,7 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     topicTitle: {
-      fontSize: RFPercentage(3.3),
+      fontSize: RFPercentage(3.5),
       fontWeight: '900',
       letterSpacing: 0.25,
       color: 'black',

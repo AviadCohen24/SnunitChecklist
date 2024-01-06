@@ -10,8 +10,7 @@
                         "operationName": "מבט כללי",
                         "steps": [
                             {
-                                "stepName": "סביבת המטוס נקייה",
-                                "details": ""
+                                "stepName": "סביבת המטוס נקייה"
                             },
                             {
                                 "stepName": "מטוס",
@@ -52,7 +51,7 @@
                             },
                             {
                                 "stepName": "ידית גלגלים בחירום",
-                                "details": "NORMAL"
+                                "details": "נורמל"
                             },
                             {
                                 "stepName": "מטפה ופטיש חירום",
@@ -304,7 +303,7 @@
                         "steps": [
                             {
                                 "stepName": "ספר מטוס",
-                                "details": "בוק וחתום"
+                                "details": "בדוק וחתום"
                             },
                             {
                                 "stepName": "תא מטען",
@@ -374,7 +373,7 @@
                             },
                             {
                                 "stepName": "BUS TIE",
-                                "details": "MAN"
+                                "details": "מצב MAN"
                             },
                             {
                                 "stepName": "אורות נגד התנגשות",
