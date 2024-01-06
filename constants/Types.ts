@@ -17,7 +17,7 @@ export type Subtopic = {
 
 export type ChecklistItem = {
   title: string;
-  backgroundUrl: string;
+  background: string;
   subtopics: Subtopic[];
 };
 

@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
 import { Text, StyleSheet, Pressable, Dimensions } from "react-native";
+import { RFPercentage } from "react-native-responsive-fontsize";
 
 const screenHeight = Dimensions.get('window').height;
 const buttonMargin = 25;
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   text: {
-    fontSize: 25,
+    fontSize: RFPercentage(2.3),
     lineHeight: 25,
     fontWeight: 'bold',
     letterSpacing: 0.25,
