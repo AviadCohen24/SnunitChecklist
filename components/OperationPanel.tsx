@@ -10,12 +10,12 @@ type OperationProps = {
 
 export default function OperationPanel(props: OperationProps) {
     const { operation } = props;
-
+    
     return(
         <View style={styles.container}>
             {operation.operationName && <Text style={styles.operationName}>{operation.operationName}</Text>}
             {operation.steps.map((val, index) => (
-              <OperationStep key={index} step={val} index={index}/>  
+                <OperationStep key={index} step={val} index={index}/>
             ))}
         </View>
     )
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: "transpert",
         justifyContent: "center",
-        marginBottom: 15
+        marginBottom: 15,
     },
     operationName: {
         fontSize: RFPercentage(2),

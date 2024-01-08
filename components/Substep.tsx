@@ -10,8 +10,7 @@ type SubstepProps = {
 
 export default function Substep(props: SubstepProps) {
     const { subStepName, details, parentIndex, index } = props;
-    const char = `${String.fromCharCode(80)}`; 
-    console.log('hebrew', char);
+    
     return(
         <View style={styles.container}>
             <Text style={styles.subStep}>{parentIndex + 1}.{index + 1}</Text>

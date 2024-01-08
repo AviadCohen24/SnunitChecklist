@@ -3,7 +3,9 @@ export type StepDetail = {
   stepName: string;
   details?: string;
   subSteps?: { subStepName: string; details: string; }[];
-  // TODO: Add note, warning and preStep to the type
+  note?: string;
+  warning?: string;
+  preStep?: string;
 };
 
 export type Operation = {
@@ -12,13 +14,13 @@ export type Operation = {
 };
 
 export type Subtopic = {
-  name: string;
+  name?: string;
   operations: Operation[];
 };
 
 export type ChecklistItem = {
   title: string;
-  background: string;
+  background?: string;
   subtopics: Subtopic[];
 };
 

@@ -17,7 +17,7 @@ const ImportRequiredTopic = (topicName: string): ChecklistItem => {
     return undefined;
 }
 
-const ImportBackground = (backgroundName: string) => {
+const ImportBackground = (backgroundName: string = "beforeIgnition") => {
     return TopicBackgrounds[backgroundName];
 }
 
