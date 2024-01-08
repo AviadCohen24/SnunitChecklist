@@ -9,7 +9,7 @@ const screenHeight = Dimensions.get('window').height;
 
 export default function LearningTab() {
   let contentArray = Content.reduce((acc, current, index) => {
-    if (index < 4) {
+    if (index < 3) {
       acc.firstFour.push(current);
     }
     else {

@@ -3,6 +3,7 @@ export type StepDetail = {
   stepName: string;
   details?: string;
   subSteps?: { subStepName: string; details: string; }[];
+  // TODO: Add note, warning and preStep to the type
 };
 
 export type Operation = {
