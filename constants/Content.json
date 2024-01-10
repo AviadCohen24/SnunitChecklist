@@ -407,6 +407,7 @@
     },
     {
         "title": "התנעה",
+        "background": "ignition",
         "subtopics": [
             {
                 "name": "התנעת מנוע",
@@ -511,6 +512,7 @@
     },
     {
         "title": "לאחר התנעה",
+        "background": "afterIgnition",
         "subtopics": [
             {
                 "name": "אחרי התנעה",
@@ -805,6 +807,7 @@
     },
     {
         "title": "באוויר",
+        "afterIgnition": "inAir",
         "subtopics": [
             {
                 "name": "לאחר המראה",
@@ -1062,6 +1065,7 @@
     },
     {
         "title": "הליכה סביב ו-T&G",
+        "background": "touchNGo",
         "subtopics": [
             {
                 "name": "הליכה סביב",
@@ -1133,6 +1137,7 @@
     },
     {
         "title": "לאחר נחיתה",
+        "background": "afterIgnition",
         "subtopics": [
             {
                 "name": "אחרי נחיתה",
