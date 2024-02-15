@@ -33,9 +33,12 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(1.7),
         fontWeight: "600",
         textAlign: "right",
+        color: "white",
     },
     subStepDescription: {
         fontSize: RFPercentage(1.7),
+        fontWeight: "600",
         textAlign: "right",
+        color: "white",
     }
 })

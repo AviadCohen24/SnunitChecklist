@@ -28,9 +28,10 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     operationName: {
-        fontSize: RFPercentage(2),
-        fontWeight: "700",
+        fontSize: RFPercentage(2.5),
+        fontWeight: "800",
         textAlign: "right",
-        paddingRight: 15
+        paddingRight: 15,
+        color: "white"
     }
 })

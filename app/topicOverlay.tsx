@@ -60,10 +60,10 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     topicTitle: {
-      fontSize: RFPercentage(3.5),
+      fontSize: RFPercentage(3.7),
       fontWeight: '900',
       letterSpacing: 0.25,
-      color: 'black',
+      color: 'white',
       textAlign: 'center'
     },
   });

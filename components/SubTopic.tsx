@@ -27,8 +27,9 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     subTitle: {
-        fontSize: RFPercentage(2.5),
-        fontWeight: "800",
-        textAlign: "center"
+        fontSize: RFPercentage(3),
+        fontWeight: "900",
+        textAlign: "center",
+        color: "white",
     }
 })

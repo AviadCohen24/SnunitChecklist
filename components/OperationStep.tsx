@@ -41,13 +41,16 @@ const styles = StyleSheet.create({
         marginTop: 7,
     },
     stepName: {
-        fontSize: RFPercentage(1.7),
-        fontWeight: "600",
+        fontSize: RFPercentage(2),
+        fontWeight: "800",
         textAlign: "right",
+        color: "white",
     },
     stepDescription: {
         fontSize: RFPercentage(1.7),
+        fontWeight: "700",
         textAlign: "right",
         flexWrap: "wrap",
+        color: "white",
     }
 })

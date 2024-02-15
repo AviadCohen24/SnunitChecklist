@@ -10,25 +10,25 @@ const screenHeight = Dimensions.get('window').height;
 export default function LearningTab() {
   let contentArray = Content.reduce((acc, current, index) => {
     if (index < 3) {
-      acc.firstFour.push(current);
+      acc.firstThree.push(current);
     }
     else {
-      acc.nextFour.push(current);
+      acc.nextThree.push(current);
     }
     return acc;
-  }, { firstFour: [], nextFour: [] });
+  }, { firstThree: [], nextThree: [] });
 
   return (
     <ImageBackground source={PngTopView} contentFit="cover" style={styles.background}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         <View style={styles.container}>
           <View style={styles.leftColumn}>
-            {contentArray.firstFour.map(topic => (
+            {contentArray.firstThree.map(topic => (
               <TopicLinkButton key={topic.title} topicName={topic.title} />
             ))}
           </View>
           <View style={styles.rightColumn}>
-            {contentArray.nextFour.map(topic => (
+            {contentArray.nextThree.map(topic => (
               <TopicLinkButton key={topic.title} topicName={topic.title} />
             ))}
           </View>
@@ -47,6 +47,11 @@ const baseStyles = StyleSheet.create({
 });
 
 const styles = StyleSheet.create({
+  scrollViewContainer: {
+    backgroundColor: 'transparent',
+    flexGrow: 1,
+    justifyContent: 'center', 
+  },
   container: {
     flex: 1,
     backgroundColor: 'transparent',

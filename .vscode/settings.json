@@ -1,3 +1,8 @@
 {
-    "dotnetAcquisitionExtension.existingDotnetPath": []
+    "dotnetAcquisitionExtension.existingDotnetPath": [],
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#5D0E17",
+        "titleBar.activeBackground": "#821320",
+        "titleBar.activeForeground": "#FEFBFB"
+    }
 }

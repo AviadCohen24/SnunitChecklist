@@ -43,13 +43,20 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
+      <Tabs.Screen 
+        name='map'
+        options={{
+          title: 'מפה',
+          tabBarIcon: ({ color }) => <TabBarIcon name='map' color={color} />
+        }}
+      />
+      {/* <Tabs.Screen
         name="two"
         options={{
           title: 'תרגול',
           tabBarIcon: ({ color }) => <TabBarIcon name="flag-checkered" color={color} />,
         }}
-      />
+      /> */}
     </Tabs>
   );
 }
