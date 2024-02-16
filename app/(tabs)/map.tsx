@@ -47,7 +47,7 @@ export default function TabMapScreen() {
 
     return (
       <View style={styles.container}>
-        <Draggable touchableOpacityProps={{ activeOpacity: 1 }}>
+        <Draggable touchableOpacityProps={{ activeOpacity: 1 }} x={60} y={100}>
           <PinchGestureHandler
             onGestureEvent={onPinchGestureEvent}
             onHandlerStateChange={onPinchHandlerStateChange}>
@@ -64,8 +64,8 @@ export default function TabMapScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center', // This centers the image vertically
-    alignItems: 'center', // This centers the image horizontally
     backgroundColor: '#000',
+    width: windowWidth,
+    height: windowHeight,
   },
 });
