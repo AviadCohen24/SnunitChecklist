@@ -22,5 +22,10 @@ Embarking on this project allowed me to dive deep into React Native, starting fr
 ### Production
 The application may already be available for download on the App Store and Google Play. Check the respective platforms for the latest version.
 
+![Pratice window](https://github.com/AviadCohen24/SnunitChecklist/blob/main/screenshots/PracticeScreen.jpeg)
+![Topic modal window](https://github.com/AviadCohen24/SnunitChecklist/blob/main/screenshots/TopicScreen.jpeg)
+![Offline map windiw](https://github.com/AviadCohen24/SnunitChecklist/blob/main/screenshots/OfflineMapScreen.jpeg)
+![Online interactive map window](https://github.com/AviadCohen24/SnunitChecklist/blob/main/screenshots/OnlineMapScreen.jpeg)
+
 ## Work In Progress (WIP)
 Future updates will introduce a testing section, enabling users to evaluate their knowledge and track progress. This feature aims to further support learners in mastering the checklist and flight map, ensuring they are well-prepared for their piloting journey.
